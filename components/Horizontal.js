@@ -37,7 +37,6 @@ const styles = StyleSheet.create({
     inner: {
         fontSize: 23,
         color: '#fff',
-        fontWeight: 'bold'
     },
     red: {
         backgroundColor: '#dd4d39'
