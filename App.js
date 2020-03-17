@@ -1,17 +1,12 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import Superman from './components/Superman';
-import Red from './components/Red';
-import Blue from './components/Blue';
-import Green from './components/Green';
+import Horizontal from './components/Horizontal';
 
 export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Red />
-        <Blue />
-        <Green />
+        <Horizontal />
       </View>
     );
   }
@@ -20,10 +15,8 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    justifyContent: 'center', 
     flexDirection: 'row',
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginTop: 50
+    alignItems: 'center'
   },
 });
